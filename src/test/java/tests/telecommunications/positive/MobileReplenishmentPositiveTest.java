@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import tests.base.BaseTest;
 
 import static constants.Constant.MobileReplenishmentTestData.*;
-import static constants.Constant.TimeVariables.IMPLICIT_WAIT;
 import static constants.Constant.Urls.TELECOM_URL;
 
 public class MobileReplenishmentPositiveTest extends BaseTest {
@@ -24,6 +23,7 @@ public class MobileReplenishmentPositiveTest extends BaseTest {
                 .enterCardNumber(CARD_NUMBER)
                 .enterCardExpDate(CARD_EXP_DATE)
                 .enterCardCvv(CARD_CVV_CODE)
+                .waitForButtonLoader()
                 .pressToTheCartButton()
                 .paymentDetailsPresentInCartCheck("+380" + PHONE_NUMBER);
     }

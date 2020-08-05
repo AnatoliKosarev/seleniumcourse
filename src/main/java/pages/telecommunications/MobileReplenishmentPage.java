@@ -20,6 +20,7 @@ public class MobileReplenishmentPage extends BasePage {
     private final By cardExpDateInputFieldLocator = By.xpath("//input[@data-qa-node = 'expiredebitSource']");
     private final By cardCvvInputFieldLocator = By.xpath("//input[@data-qa-node = 'cvvdebitSource']");
     private final By toTheCartButtonLocator = By.xpath("//button[@data-qa-node = 'submit']");
+    private final By toTheCartButtonLoaderLocator = By.xpath("//div[@data-qa-node = 'preloader']");
     private final By paymentDetailsLocator = By.xpath("//span[@data-qa-node = 'details']");
 
     public MobileReplenishmentPage(WebDriver driver) {
@@ -86,12 +87,26 @@ public class MobileReplenishmentPage extends BasePage {
     }
 
     /**
+     * Wait until loader is displyed on "To the cart" button
+     * @return current object
+     */
+    public MobileReplenishmentPage waitForButtonLoader() {
+        waitForElementToBeVisible(driver.findElement(toTheCartButtonLoaderLocator));
+        return this;
+    }
+
+    /**
      * Press "To the cart" button
      * @return current object
      */
     public MobileReplenishmentPage pressToTheCartButton() {
-        WebElement toTheCartButton = waitForElementToBeVisible(driver.findElement(toTheCartButtonLocator));
-        toTheCartButton.click();
+        new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.textToBePresentInElement(driver.findElement(toTheCartButtonLocator), "To the cart"));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(toTheCartButtonLocator).click();
         return this;
     }
 
