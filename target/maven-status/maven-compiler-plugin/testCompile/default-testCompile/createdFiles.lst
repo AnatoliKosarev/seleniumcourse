@@ -1,0 +1,3 @@
+tests\telecommunications\positive\MobileReplenishmentPositiveTest.class
+tests\loans\positive\CarLoansPositiveTest.class
+tests\base\BaseTest.class

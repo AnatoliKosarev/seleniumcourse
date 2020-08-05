@@ -1,0 +1,53 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "kosarau",
+    "children" : [ {
+      "name" : "21876@kosarau.ForkJoinPool-1-worker-1(13)",
+      "children" : [ {
+        "name" : "minAmountReplenishmentCheck()",
+        "uid" : "556d8648e50cbdb6",
+        "parentUid" : "f0e71c7d445889de17e03fa967886964",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563434581,
+          "stop" : 1596563441442,
+          "duration" : 6861
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "selectWalletInPublicSession()",
+        "uid" : "4711134f35de84d",
+        "parentUid" : "f0e71c7d445889de17e03fa967886964",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563441447,
+          "stop" : 1596563444143,
+          "duration" : 2696
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f0e71c7d445889de17e03fa967886964"
+    }, {
+      "name" : "21876@kosarau.ForkJoinPool-1-worker-0(14)",
+      "children" : [ {
+        "name" : "selectAgreementTabInPublicSession()",
+        "uid" : "703eb419567a4d7e",
+        "parentUid" : "4b26ff55d7a9e54cedb8b30ebd68fda5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563434587,
+          "stop" : 1596563441184,
+          "duration" : 6597
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b26ff55d7a9e54cedb8b30ebd68fda5"
+    } ],
+    "uid" : "36c5180cda729149032a545caa82cdfe"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "bb4a024f65638f6b698e24d4a1462810",
+    "name" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "9f690fa06117d38bb1c275ec327b6c6b",
+    "name" : "tests.loans.positive.CarLoansPositiveTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

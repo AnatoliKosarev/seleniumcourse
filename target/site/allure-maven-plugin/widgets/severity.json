@@ -1,0 +1,31 @@
+[ {
+  "uid" : "703eb419567a4d7e",
+  "name" : "selectAgreementTabInPublicSession()",
+  "time" : {
+    "start" : 1596563434587,
+    "stop" : 1596563441184,
+    "duration" : 6597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4711134f35de84d",
+  "name" : "selectWalletInPublicSession()",
+  "time" : {
+    "start" : 1596563441447,
+    "stop" : 1596563444143,
+    "duration" : 2696
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "556d8648e50cbdb6",
+  "name" : "minAmountReplenishmentCheck()",
+  "time" : {
+    "start" : 1596563434581,
+    "stop" : 1596563441442,
+    "duration" : 6861
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

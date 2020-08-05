@@ -1,0 +1,53 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "telecommunications.positive.MobileReplenishmentPositiveTest",
+      "children" : [ {
+        "name" : "minAmountReplenishmentCheck",
+        "uid" : "556d8648e50cbdb6",
+        "parentUid" : "1d96076147d2ada223276ba43bc9a122",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563434581,
+          "stop" : 1596563441442,
+          "duration" : 6861
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "selectWalletInPublicSession",
+        "uid" : "4711134f35de84d",
+        "parentUid" : "1d96076147d2ada223276ba43bc9a122",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563441447,
+          "stop" : 1596563444143,
+          "duration" : 2696
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "telecommunications.positive.MobileReplenishmentPositiveTest"
+    }, {
+      "name" : "loans.positive.CarLoansPositiveTest",
+      "children" : [ {
+        "name" : "selectAgreementTabInPublicSession",
+        "uid" : "703eb419567a4d7e",
+        "parentUid" : "e6de6f55e7a191e801ed140634e7e0e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596563434587,
+          "stop" : 1596563441184,
+          "duration" : 6597
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "loans.positive.CarLoansPositiveTest"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ]
+}

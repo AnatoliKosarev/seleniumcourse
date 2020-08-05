@@ -1,0 +1,4 @@
+"Status","Name","Duration in ms","Description"
+"passed","tests.telecommunications.positive.MobileReplenishmentPositiveTest.minAmountReplenishmentCheck","6861",""
+"passed","tests.telecommunications.positive.MobileReplenishmentPositiveTest.selectWalletInPublicSession","2696",""
+"passed","tests.loans.positive.CarLoansPositiveTest.selectAgreementTabInPublicSession","6597",""
