@@ -4,49 +4,49 @@
   "children" : [ {
     "name" : "kosarau",
     "children" : [ {
-      "name" : "12316@kosarau.ForkJoinPool-1-worker-0(14)",
+      "name" : "23660@kosarau.ForkJoinPool-1-worker-0(14)",
       "children" : [ {
         "name" : "selectWalletInPublicSession()",
-        "uid" : "f08fabc275e5c76a",
-        "parentUid" : "778751fe7e7e7aa9799938481a0f9f42",
+        "uid" : "9130b997194ee6e9",
+        "parentUid" : "0e22cdb1b298288fbf80571d44bb4236",
         "status" : "passed",
         "time" : {
-          "start" : 1596715048670,
-          "stop" : 1596715051303,
-          "duration" : 2633
+          "start" : 1596730994022,
+          "stop" : 1596730996842,
+          "duration" : 2820
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "selectAgreementTabInPublicSession()",
-        "uid" : "fe88e18d0ef5986c",
-        "parentUid" : "778751fe7e7e7aa9799938481a0f9f42",
+        "uid" : "eb76957dc908112",
+        "parentUid" : "0e22cdb1b298288fbf80571d44bb4236",
         "status" : "passed",
         "time" : {
-          "start" : 1596715041226,
-          "stop" : 1596715047841,
-          "duration" : 6615
+          "start" : 1596730986047,
+          "stop" : 1596730992743,
+          "duration" : 6696
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "778751fe7e7e7aa9799938481a0f9f42"
+      "uid" : "0e22cdb1b298288fbf80571d44bb4236"
     }, {
-      "name" : "12316@kosarau.ForkJoinPool-1-worker-1(13)",
+      "name" : "23660@kosarau.ForkJoinPool-1-worker-1(13)",
       "children" : [ {
         "name" : "minAmountReplenishmentCheck()",
-        "uid" : "c194e0252bb5808c",
-        "parentUid" : "1f2122544f185061a22bf506c2e98519",
+        "uid" : "c3dccf4da94afb2",
+        "parentUid" : "3c0f40388685f3630200ee27a72fe15f",
         "status" : "broken",
         "time" : {
-          "start" : 1596715041226,
-          "stop" : 1596715059477,
-          "duration" : 18251
+          "start" : 1596730986047,
+          "stop" : 1596730997251,
+          "duration" : 11204
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1f2122544f185061a22bf506c2e98519"
+      "uid" : "3c0f40388685f3630200ee27a72fe15f"
     } ],
     "uid" : "36c5180cda729149032a545caa82cdfe"
   } ]

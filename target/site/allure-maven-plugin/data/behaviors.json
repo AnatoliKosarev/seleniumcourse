@@ -3,37 +3,37 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "minAmountReplenishmentCheck()",
-    "uid" : "c194e0252bb5808c",
+    "uid" : "c3dccf4da94afb2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1596715041226,
-      "stop" : 1596715059477,
-      "duration" : 18251
+      "start" : 1596730986047,
+      "stop" : 1596730997251,
+      "duration" : 11204
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "selectAgreementTabInPublicSession()",
-    "uid" : "fe88e18d0ef5986c",
+    "uid" : "eb76957dc908112",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1596715041226,
-      "stop" : 1596715047841,
-      "duration" : 6615
+      "start" : 1596730986047,
+      "stop" : 1596730992743,
+      "duration" : 6696
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "selectWalletInPublicSession()",
-    "uid" : "f08fabc275e5c76a",
+    "uid" : "9130b997194ee6e9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1596715048670,
-      "stop" : 1596715051303,
-      "duration" : 2633
+      "start" : 1596730994022,
+      "stop" : 1596730996842,
+      "duration" : 2820
     },
     "flaky" : false,
     "parameters" : [ ]

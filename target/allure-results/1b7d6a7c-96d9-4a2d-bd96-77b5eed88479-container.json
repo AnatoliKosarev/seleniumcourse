@@ -1,1 +1,0 @@
-{"uuid":"1b7d6a7c-96d9-4a2d-bd96-77b5eed88479","name":"minAmountReplenishmentCheck()","children":["5daf93f0-aa69-46d7-9bc9-8e9e98be5ff4"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1596715059079,"stop":1596715059093}],"links":[],"start":1596715041188,"stop":1596715059479}

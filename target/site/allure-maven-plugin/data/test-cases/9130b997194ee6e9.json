@@ -1,12 +1,12 @@
 {
-  "uid" : "f08fabc275e5c76a",
+  "uid" : "9130b997194ee6e9",
   "name" : "selectWalletInPublicSession()",
   "fullName" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest.selectWalletInPublicSession",
   "historyId" : "2f2562ad7fc944312bd786d03ad6ea2d",
   "time" : {
-    "start" : 1596715048670,
-    "stop" : 1596715051303,
-    "duration" : 2633
+    "start" : 1596730994022,
+    "stop" : 1596730996842,
+    "duration" : 2820
   },
   "description" : "",
   "status" : "passed",
@@ -15,31 +15,31 @@
   "afterStages" : [ {
     "name" : "clearCookiesAndLocalStorage",
     "time" : {
-      "start" : 1596715051259,
-      "stop" : 1596715051303,
-      "duration" : 44
+      "start" : 1596730996459,
+      "stop" : 1596730996842,
+      "duration" : 383
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0
   }, {
     "name" : "closeBrowser",
     "time" : {
-      "start" : 1596715059495,
-      "stop" : 1596715060211,
-      "duration" : 716
+      "start" : 1596730997273,
+      "stop" : 1596730997950,
+      "duration" : 677
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0
   } ],
@@ -48,7 +48,7 @@
     "value" : "kosarau"
   }, {
     "name" : "thread",
-    "value" : "12316@kosarau.ForkJoinPool-1-worker-0(14)"
+    "value" : "23660@kosarau.ForkJoinPool-1-worker-0(14)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -81,6 +81,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f08fabc275e5c76a.json",
+  "source" : "9130b997194ee6e9.json",
   "parameterValues" : [ ]
 }

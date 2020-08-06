@@ -1,12 +1,12 @@
 {
-  "uid" : "fe88e18d0ef5986c",
+  "uid" : "eb76957dc908112",
   "name" : "selectAgreementTabInPublicSession()",
   "fullName" : "tests.loans.positive.CarLoansPositiveTest.selectAgreementTabInPublicSession",
   "historyId" : "2617b32673ebf4748b3f798203f042f7",
   "time" : {
-    "start" : 1596715041226,
-    "stop" : 1596715047841,
-    "duration" : 6615
+    "start" : 1596730986047,
+    "stop" : 1596730992743,
+    "duration" : 6696
   },
   "description" : "",
   "status" : "passed",
@@ -15,31 +15,31 @@
   "afterStages" : [ {
     "name" : "clearCookiesAndLocalStorage",
     "time" : {
-      "start" : 1596715047784,
-      "stop" : 1596715047834,
-      "duration" : 50
+      "start" : 1596730992669,
+      "stop" : 1596730992736,
+      "duration" : 67
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0
   }, {
     "name" : "closeBrowser",
     "time" : {
-      "start" : 1596715048017,
-      "stop" : 1596715048661,
-      "duration" : 644
+      "start" : 1596730992927,
+      "stop" : 1596730994017,
+      "duration" : 1090
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
     "hasContent" : false,
+    "stepsCount" : 0,
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0
   } ],
@@ -48,7 +48,7 @@
     "value" : "kosarau"
   }, {
     "name" : "thread",
-    "value" : "12316@kosarau.ForkJoinPool-1-worker-0(14)"
+    "value" : "23660@kosarau.ForkJoinPool-1-worker-0(14)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -81,6 +81,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "fe88e18d0ef5986c.json",
+  "source" : "eb76957dc908112.json",
   "parameterValues" : [ ]
 }

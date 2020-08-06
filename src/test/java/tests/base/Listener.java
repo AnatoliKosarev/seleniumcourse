@@ -1,5 +1,6 @@
 package tests.base;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
@@ -29,5 +30,11 @@ public class Listener implements TestWatcher {
             LOGGER.info("Exception on saving screenshot!");
             e.printStackTrace();
         }
+        attachScreenshotToReport(ts);
+    }
+
+    @Attachment
+    public byte[] attachScreenshotToReport(TakesScreenshot takesScreenshot) {
+        return takesScreenshot.getScreenshotAs(OutputType.BYTES);
     }
 }
