@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: tests.telecommunications.positive.MobileReplenishmentPositiveTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.295 s - in tests.telecommunications.positive.MobileReplenishmentPositiveTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.151 s <<< FAILURE! - in tests.telecommunications.positive.MobileReplenishmentPositiveTest
+minAmountReplenishmentCheck  Time elapsed: 10.828 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('To the cart') to be present in element [[ChromeDriver: chrome on WINDOWS (704b34c18536cc0d94d7f5a1e64dab90)] -> xpath: //button[@data-qa-node = 'submit']] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KOSARAU', ip: '169.254.129.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\kosarau\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 704b34c18536cc0d94d7f5a1e64dab90
+	at tests.telecommunications.positive.MobileReplenishmentPositiveTest.minAmountReplenishmentCheck(MobileReplenishmentPositiveTest.java:27)
+

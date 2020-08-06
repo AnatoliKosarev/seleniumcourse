@@ -1,0 +1,86 @@
+{
+  "uid" : "fe88e18d0ef5986c",
+  "name" : "selectAgreementTabInPublicSession()",
+  "fullName" : "tests.loans.positive.CarLoansPositiveTest.selectAgreementTabInPublicSession",
+  "historyId" : "2617b32673ebf4748b3f798203f042f7",
+  "time" : {
+    "start" : 1596715041226,
+    "stop" : 1596715047841,
+    "duration" : 6615
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ {
+    "name" : "clearCookiesAndLocalStorage",
+    "time" : {
+      "start" : 1596715047784,
+      "stop" : 1596715047834,
+      "duration" : 50
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "closeBrowser",
+    "time" : {
+      "start" : 1596715048017,
+      "stop" : 1596715048661,
+      "duration" : 644
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "kosarau"
+  }, {
+    "name" : "thread",
+    "value" : "12316@kosarau.ForkJoinPool-1-worker-0(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectAgreementTabInPublicSession"
+  }, {
+    "name" : "suite",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fe88e18d0ef5986c.json",
+  "parameterValues" : [ ]
+}

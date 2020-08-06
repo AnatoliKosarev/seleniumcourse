@@ -1,30 +1,30 @@
 [ {
-  "uid" : "556d8648e50cbdb6",
-  "name" : "minAmountReplenishmentCheck()",
-  "time" : {
-    "start" : 1596563434581,
-    "stop" : 1596563441442,
-    "duration" : 6861
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4711134f35de84d",
+  "uid" : "f08fabc275e5c76a",
   "name" : "selectWalletInPublicSession()",
   "time" : {
-    "start" : 1596563441447,
-    "stop" : 1596563444143,
-    "duration" : 2696
+    "start" : 1596715048670,
+    "stop" : 1596715051303,
+    "duration" : 2633
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "703eb419567a4d7e",
+  "uid" : "c194e0252bb5808c",
+  "name" : "minAmountReplenishmentCheck()",
+  "time" : {
+    "start" : 1596715041226,
+    "stop" : 1596715059477,
+    "duration" : 18251
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fe88e18d0ef5986c",
   "name" : "selectAgreementTabInPublicSession()",
   "time" : {
-    "start" : 1596563434587,
-    "stop" : 1596563441184,
-    "duration" : 6597
+    "start" : 1596715041226,
+    "stop" : 1596715047841,
+    "duration" : 6615
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,1 +1,0 @@
-{"uuid":"aa506052-bfc2-49fc-adbc-130bdaaea6fa","name":"selectWalletInPublicSession()","children":["e084a744-dd4c-4e82-b1dc-1a96033a20d5"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1596563444102,"stop":1596563444143}],"links":[],"start":1596563441445,"stop":1596563444144}

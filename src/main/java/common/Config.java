@@ -18,4 +18,9 @@ public class Config {
      * Keep browser open after each test run when = "true"
      */
     public static final Boolean KEEP_BROWSER_OPEN = false;
+
+    /**
+     * Clear generated reports and screenshots before new build when = "true"
+     */
+    public static final Boolean CLEAR_REPORTS_AND_SCREENSHOTS = true;
 }

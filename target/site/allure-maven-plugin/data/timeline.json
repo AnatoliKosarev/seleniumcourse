@@ -4,49 +4,49 @@
   "children" : [ {
     "name" : "kosarau",
     "children" : [ {
-      "name" : "21876@kosarau.ForkJoinPool-1-worker-1(13)",
+      "name" : "12316@kosarau.ForkJoinPool-1-worker-0(14)",
       "children" : [ {
-        "name" : "minAmountReplenishmentCheck()",
-        "uid" : "556d8648e50cbdb6",
-        "parentUid" : "f0e71c7d445889de17e03fa967886964",
+        "name" : "selectWalletInPublicSession()",
+        "uid" : "f08fabc275e5c76a",
+        "parentUid" : "778751fe7e7e7aa9799938481a0f9f42",
         "status" : "passed",
         "time" : {
-          "start" : 1596563434581,
-          "stop" : 1596563441442,
-          "duration" : 6861
+          "start" : 1596715048670,
+          "stop" : 1596715051303,
+          "duration" : 2633
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "selectWalletInPublicSession()",
-        "uid" : "4711134f35de84d",
-        "parentUid" : "f0e71c7d445889de17e03fa967886964",
-        "status" : "passed",
-        "time" : {
-          "start" : 1596563441447,
-          "stop" : 1596563444143,
-          "duration" : 2696
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f0e71c7d445889de17e03fa967886964"
-    }, {
-      "name" : "21876@kosarau.ForkJoinPool-1-worker-0(14)",
-      "children" : [ {
         "name" : "selectAgreementTabInPublicSession()",
-        "uid" : "703eb419567a4d7e",
-        "parentUid" : "4b26ff55d7a9e54cedb8b30ebd68fda5",
+        "uid" : "fe88e18d0ef5986c",
+        "parentUid" : "778751fe7e7e7aa9799938481a0f9f42",
         "status" : "passed",
         "time" : {
-          "start" : 1596563434587,
-          "stop" : 1596563441184,
-          "duration" : 6597
+          "start" : 1596715041226,
+          "stop" : 1596715047841,
+          "duration" : 6615
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4b26ff55d7a9e54cedb8b30ebd68fda5"
+      "uid" : "778751fe7e7e7aa9799938481a0f9f42"
+    }, {
+      "name" : "12316@kosarau.ForkJoinPool-1-worker-1(13)",
+      "children" : [ {
+        "name" : "minAmountReplenishmentCheck()",
+        "uid" : "c194e0252bb5808c",
+        "parentUid" : "1f2122544f185061a22bf506c2e98519",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596715041226,
+          "stop" : 1596715059477,
+          "duration" : 18251
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1f2122544f185061a22bf506c2e98519"
     } ],
     "uid" : "36c5180cda729149032a545caa82cdfe"
   } ]

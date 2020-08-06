@@ -5,25 +5,25 @@
     "name" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest",
     "children" : [ {
       "name" : "minAmountReplenishmentCheck()",
-      "uid" : "556d8648e50cbdb6",
+      "uid" : "c194e0252bb5808c",
       "parentUid" : "bb4a024f65638f6b698e24d4a1462810",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1596563434581,
-        "stop" : 1596563441442,
-        "duration" : 6861
+        "start" : 1596715041226,
+        "stop" : 1596715059477,
+        "duration" : 18251
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "selectWalletInPublicSession()",
-      "uid" : "4711134f35de84d",
+      "uid" : "f08fabc275e5c76a",
       "parentUid" : "bb4a024f65638f6b698e24d4a1462810",
       "status" : "passed",
       "time" : {
-        "start" : 1596563441447,
-        "stop" : 1596563444143,
-        "duration" : 2696
+        "start" : 1596715048670,
+        "stop" : 1596715051303,
+        "duration" : 2633
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -33,13 +33,13 @@
     "name" : "tests.loans.positive.CarLoansPositiveTest",
     "children" : [ {
       "name" : "selectAgreementTabInPublicSession()",
-      "uid" : "703eb419567a4d7e",
+      "uid" : "fe88e18d0ef5986c",
       "parentUid" : "9f690fa06117d38bb1c275ec327b6c6b",
       "status" : "passed",
       "time" : {
-        "start" : 1596563434587,
-        "stop" : 1596563441184,
-        "duration" : 6597
+        "start" : 1596715041226,
+        "stop" : 1596715047841,
+        "duration" : 6615
       },
       "flaky" : false,
       "parameters" : [ ]

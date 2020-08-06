@@ -17,15 +17,14 @@ public class Listener implements TestWatcher {
 
     @Override
     public void testFailed(ExtensionContext context, Throwable cause) {
-        LOGGER.info("Test {} - FAILED!", context.getTestMethod().get().getName());
-        String screenshotName = context.getTestMethod().get().getName() +
-                System.currentTimeMillis();
+        String testName = context.getTestMethod().get().getName();
+        String screenshotName = testName + System.currentTimeMillis();
+        LOGGER.info("Test {} - FAILED!", testName);
         LOGGER.info("Trying to trace screenshot...");
         TakesScreenshot ts = (TakesScreenshot)  ((BaseTest) context.getRequiredTestInstance()).driver;
-
         File source = ts.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(source, new File("build/reports/tests" + screenshotName + ".png"));
+            FileUtils.copyFile(source, new File("build/reports/tests/" + screenshotName + ".png"));
         } catch (IOException e) {
             LOGGER.info("Exception on saving screenshot!");
             e.printStackTrace();

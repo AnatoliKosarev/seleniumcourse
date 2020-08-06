@@ -2,19 +2,20 @@
   "d354cc4cfe9a47297c082033841c8125" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "556d8648e50cbdb6",
-      "status" : "passed",
+      "uid" : "c194e0252bb5808c",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for text ('To the cart') to be present in element [[ChromeDriver: chrome on WINDOWS (704b34c18536cc0d94d7f5a1e64dab90)] -> xpath: //button[@data-qa-node = 'submit']] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'KOSARAU', ip: '169.254.129.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\kosarau\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55620}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 704b34c18536cc0d94d7f5a1e64dab90",
       "time" : {
-        "start" : 1596563434581,
-        "stop" : 1596563441442,
-        "duration" : 6861
+        "start" : 1596715041226,
+        "stop" : 1596715059477,
+        "duration" : 18251
       }
     } ]
   },
@@ -28,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "703eb419567a4d7e",
+      "uid" : "fe88e18d0ef5986c",
       "status" : "passed",
       "time" : {
-        "start" : 1596563434587,
-        "stop" : 1596563441184,
-        "duration" : 6597
+        "start" : 1596715041226,
+        "stop" : 1596715047841,
+        "duration" : 6615
       }
     } ]
   },
@@ -47,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4711134f35de84d",
+      "uid" : "f08fabc275e5c76a",
       "status" : "passed",
       "time" : {
-        "start" : 1596563441447,
-        "stop" : 1596563444143,
-        "duration" : 2696
+        "start" : 1596715048670,
+        "stop" : 1596715051303,
+        "duration" : 2633
       }
     } ]
   }
