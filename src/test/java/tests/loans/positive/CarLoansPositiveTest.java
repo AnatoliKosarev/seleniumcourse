@@ -40,7 +40,7 @@ public class CarLoansPositiveTest extends BaseTest {
 
     @Test
     @DisplayName("Public session, non-client, reviewing the contract")
-    void selectAgreementsTabInPublicSession() {
+    public void selectAgreementsTabInPublicSession() {
         basePage.goToUrl(CAR_LOANS_URL);
         carLoans
                 .selectAgreementsTab()
