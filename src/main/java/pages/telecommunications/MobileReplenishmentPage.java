@@ -1,123 +1,180 @@
 package pages.telecommunications;
 
-import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.codeborne.selenide.SelenideElement;
 import pages.base.BasePage;
 
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$x;
 import static constants.Constant.PAYMENT_DETAILS_TEXT;
-import static constants.Constant.TimeVariables.EXPLICIT_WAIT;
-
 
 public class MobileReplenishmentPage extends BasePage {
-    private final By walletButtonLocator = By.xpath("//div[contains(text(), 'My wallet')]");
-    private final By phoneInputFieldLocator = By.xpath("//input[@data-qa-node = 'phone-number']");
-    private final By amountInputFiledLocator = By.xpath("//input[@data-qa-node = 'amount']");
-    private final By cardNumberInputFiledLocator = By.xpath("//input[@data-qa-node = 'numberdebitSource']");
-    private final By cardExpDateInputFieldLocator = By.xpath("//input[@data-qa-node = 'expiredebitSource']");
-    private final By cardCvvInputFieldLocator = By.xpath("//input[@data-qa-node = 'cvvdebitSource']");
-    private final By toTheCartButtonLocator = By.xpath("//button[@data-qa-node = 'submit']");
-    private final By toTheCartButtonLoaderLocator = By.xpath("//div[@data-qa-node = 'preloader']");
-    private final By paymentDetailsLocator = By.xpath("//span[@data-qa-node = 'details']");
-
-    public MobileReplenishmentPage(WebDriver driver) {
-        super(driver);
-    }
+    private final SelenideElement walletButtonLocator = $x("//div[@data-qa-node = 'debitSourceSource']");
+    private final SelenideElement phoneInputFieldLocator = $x("//input[@data-qa-node = 'phone-number']");
+    private final SelenideElement amountInputFiledLocator = $x("//input[@data-qa-node = 'amount']");
+    private final SelenideElement cardNumberInputFiledLocator = $x("//input[@data-qa-node = 'numberdebitSource']");
+    private final SelenideElement cardExpDateInputFieldLocator = $x("//input[@data-qa-node = 'expiredebitSource']");
+    private final SelenideElement cardCvvInputFieldLocator = $x("//input[@data-qa-node = 'cvvdebitSource']");
+    private final SelenideElement toTheCartButtonLocator = $x("//button[@data-qa-node = 'submit']");
+    private final SelenideElement toTheCartButtonLoaderLocator = $x("//div[@data-qa-node = 'preloader']");
+    private final SelenideElement paymentDetailsLocator = $x("//span[@data-qa-node = 'details']");
+    private final SelenideElement cardNumberInCartLocator = $x("//td[@data-qa-node = 'card']");
+    private final SelenideElement recipientNameInCartLocator = $x("//span[@data-qa-node = 'nameB']");
+    private final SelenideElement paymentAmountInCartLocator = $x("//span[@data-qa-node = 'amount']");
+    private final SelenideElement commissionInCartLocator = $x("//span[@data-qa-node = 'commission']");
+    private final SelenideElement paymentCurrencyInCartLocator = $x("//small[@data-qa-node = 'currency']");
+    private final SelenideElement commissionCurrencyInCartLocator = $x("//small[@data-qa-node = 'commission-currency']");
 
     /**
      * Press Wallet button
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage clickWalletButton() {
-        driver.findElement(walletButtonLocator).click();
+        walletButtonLocator.shouldBe(visible).click();
         return this;
     }
 
     /**
-     * Enter phone number excluding country code
-     * @param phoneNumber phone number
-     * @return current object
+     * Enter phone number into "Number" input field excluding country code
+     * @param phoneNumber phone number into "Number" input field
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage enterPhoneNumber(String phoneNumber) {
-        driver.findElement(phoneInputFieldLocator).sendKeys(phoneNumber);
+        clearAndType(phoneInputFieldLocator, phoneNumber);
         return this;
     }
 
     /**
      * Enter payment amount
-     * @param paymentAmount payment amount
-     * @return current object
+     * @param paymentAmount payment amount into "Amount" input field
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage enterPaymentAmount(String paymentAmount) {
-        driver.findElement(amountInputFiledLocator).sendKeys(paymentAmount);
+        clearAndType(amountInputFiledLocator, paymentAmount);
         return this;
     }
 
     /**
-     * Enter debit card number
+     * Enter debit card number into "Card for payment" input field
      * @param cardNumber debit card number
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage enterCardNumber(String cardNumber) {
-        driver.findElement(cardNumberInputFiledLocator).sendKeys(cardNumber);
+        clearAndType(cardNumberInputFiledLocator, cardNumber);
         return this;
     }
 
     /**
-     * Enter debit card expiry date
+     * Enter debit card expiry date into "Validation term" input field
      * @param cardExpDate debit card expiry date
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage enterCardExpDate(String cardExpDate) {
-        driver.findElement(cardExpDateInputFieldLocator).sendKeys(cardExpDate);
+        clearAndType(cardExpDateInputFieldLocator, cardExpDate);
         return this;
     }
 
     /**
-     * Enter debit card CVV code
+     * Enter debit card CVV code into "CVV-code" input field
      * @param cardCvv debit card CVV code
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage enterCardCvv(String cardCvv) {
-        driver.findElement(cardCvvInputFieldLocator).sendKeys(cardCvv);
+        clearAndType(cardCvvInputFieldLocator, cardCvv);
         return this;
     }
 
     /**
-     * Wait until loader is displyed on "To the cart" button
-     * @return current object
+     * Wait until loader is displayed on "To the cart" button
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage waitForButtonLoader() {
-        waitForElementToBeVisible(driver.findElement(toTheCartButtonLoaderLocator));
+        toTheCartButtonLoaderLocator.shouldBe(visible);
         return this;
     }
 
     /**
      * Press "To the cart" button
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
     public MobileReplenishmentPage pressToTheCartButton() {
-        new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.textToBePresentInElement(driver.findElement(toTheCartButtonLocator), "To the cart"));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        driver.findElement(toTheCartButtonLocator).click();
+        toTheCartButtonLocator.shouldHave(text("To the cart"));
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        toTheCartButtonLocator.click();
         return this;
     }
 
     /**
-     * Check that payment details text is present on the page and user is on cart modal
+     * Check that payment details text is present in Cart widget
      * @param phoneNumber user phone number with the country code
-     * @return current object
+     * @return MobileReplenishmentPage object
      */
-    public MobileReplenishmentPage paymentDetailsPresentInCartCheck(String phoneNumber) {
-        WebElement paymentDetails  = waitForElementToBeVisible(driver.findElement(paymentDetailsLocator));
-        Assertions.assertEquals(PAYMENT_DETAILS_TEXT + phoneNumber, paymentDetails.getText());
+    public MobileReplenishmentPage checkPaymentDetailsPresentInCart(String phoneNumber) {
+        paymentDetailsLocator.shouldHave(text(PAYMENT_DETAILS_TEXT + phoneNumber));
+        return this;
+    }
+
+    /**
+     * Check that card number is present in Cart widget
+     * @param cardNumber user card number in <dddd **** ***** dddd> format
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkCardNumberPresentInCart(String cardNumber) {
+        cardNumberInCartLocator.shouldHave(text(cardNumber));
+        return this;
+    }
+
+    /**
+     * Check that recipient name is present in Cart widget
+     * @param recipientName recipient name
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkRecipientNamePresentInCart(String recipientName) {
+        recipientNameInCartLocator.shouldHave(text(recipientName));
+        return this;
+    }
+
+    /**
+     * Check that payment amount is present in Cart widget
+     * @param paymentAmount payment amount
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkPaymentAmountPresentInCart(String paymentAmount) {
+        paymentAmountInCartLocator.shouldHave(text(paymentAmount));
+        return this;
+    }
+
+    /**
+     * Check that commission amount is present in Cart widget
+     * @param commissionAmount commission amount
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkCommissionAmountPresentInCart(String commissionAmount) {
+        commissionInCartLocator.shouldHave(text(commissionAmount));
+        return this;
+    }
+
+    /**
+     * Check that payment currency is present in Cart widget
+     * @param paymentCurrency payment currency
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkPaymentCurrencyPresentInCart(String paymentCurrency) {
+        paymentCurrencyInCartLocator.shouldHave(text(paymentCurrency));
+        return this;
+    }
+
+    /**
+     * Check that commission currency is present in Cart widget
+     * @param commissionCurrency commission currency
+     * @return MobileReplenishmentPage object
+     */
+    public MobileReplenishmentPage checkCommissionCurrencyPresentInCart(String commissionCurrency) {
+        commissionCurrencyInCartLocator.shouldHave(text(commissionCurrency));
         return this;
     }
 }

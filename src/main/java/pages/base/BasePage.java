@@ -1,44 +1,40 @@
 package pages.base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.Keys;
 
-import static constants.Constant.TimeVariables.*;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selenide.*;
 
 public class BasePage {
-    public WebDriver driver;
-    public final By authWidgetLocator = By.xpath("//iframe[@src='https://login-widget.privat24.ua/']");
-
-    public BasePage(WebDriver driver) {
-        this.driver = driver;
-    }
+    public final SelenideElement authWidgetLocator = $x("//iframe[@src='https://login-widget.privat24.ua/']");
 
     /**
      * Navigate to a specific URL
      * @param url specified URL
      */
     public void goToUrl(String url) {
-        driver.get(url);
+        open(url);
     }
 
     /**
-     * Wait for specific element to be visible in DOM model
-     * @param webElement specific element to be visible
-     * @return specific element after this element is visible
+     * Clear input field if it's not empty and enter value
+     * @param element input field element
+     * @param value value that needs to be entered
      */
-    public WebElement waitForElementToBeVisible(WebElement webElement) {
-        new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(webElement));
-        return webElement;
+    protected void clearAndType(SelenideElement element, String value) {
+        String valueAttribute = element.getAttribute("value");
+        while (valueAttribute != null && !(valueAttribute.equals(""))) {
+            element.sendKeys(Keys.BACK_SPACE);
+        }
+        element.setValue(value);
     }
 
     /**
      * Check if authentication widget is visible in DOM model
      */
-    public WebElement authWidgetIsPresentCheck() {
-        WebElement authWidget = driver.findElement(authWidgetLocator);
-        return waitForElementToBeVisible(authWidget);
+    public void authWidgetIsPresentCheck() {
+        authWidgetLocator.shouldBe(visible);
     }
 }

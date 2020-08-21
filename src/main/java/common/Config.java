@@ -1,5 +1,8 @@
 package common;
 
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+
 public class Config {
 
     /**
@@ -23,4 +26,11 @@ public class Config {
      * Clear generated reports and screenshots before new build when = "true"
      */
     public static final Boolean CLEAR_REPORTS_AND_SCREENSHOTS = true;
+
+    static {
+        Configuration.holdBrowserOpen = KEEP_BROWSER_OPEN;
+        Configuration.reportsFolder = "build/reports/tests";
+    }
 }
+
+
