@@ -3,9 +3,11 @@ package pages.base;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.Keys;
 
+import java.util.Objects;
+
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.open;
 
 public class BasePage {
     public final SelenideElement authWidgetLocator = $x("//iframe[@src='https://login-widget.privat24.ua/']");
@@ -24,8 +26,7 @@ public class BasePage {
      * @param value value that needs to be entered
      */
     protected void clearAndType(SelenideElement element, String value) {
-        String valueAttribute = element.getAttribute("value");
-        while (valueAttribute != null && !(valueAttribute.equals(""))) {
+        while (!Objects.equals(element.getAttribute("value"), "")) {
             element.sendKeys(Keys.BACK_SPACE);
         }
         element.setValue(value);
@@ -34,7 +35,7 @@ public class BasePage {
     /**
      * Check if authentication widget is visible in DOM model
      */
-    public void authWidgetIsPresentCheck() {
+    public void checkAuthWidgetIsPresent() {
         authWidgetLocator.shouldBe(visible);
     }
 }

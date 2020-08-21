@@ -2,24 +2,24 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "element click intercepted: Element <button type=\"submit\" data-qa-node=\"submit\" class=\"sc-bwzfXH ezBCKw\">...</button> is not clickable at point (960, 806). Other element would receive the click: <div class=\"sc-esjQYD gXfEby\">...</div>\n  (Session info: chrome=84.0.4147.105)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'KOSARAU', ip: '169.254.129.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\kosarau\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 54a4a42b78ae0a3f16c3d43167f69318",
+      "name" : "Element not found {By.xpath: //div[contains(text(), 'One-time password has been forwarded to your phone')]}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.png\r\nPage source: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(), 'One-time password has been forwarded to your phone')]\"}",
       "children" : [ {
-        "name" : "minAmountReplenishmentCheck()",
-        "uid" : "c3dccf4da94afb2",
-        "parentUid" : "07f81be3b1f35f195dc7f2a4d62c4e9d",
-        "status" : "broken",
+        "name" : "Public session, non-client applying for a loan for a car with a mileage",
+        "uid" : "7942561d89b853a1",
+        "parentUid" : "ac689507677b6cc6544df29146df041a",
+        "status" : "failed",
         "time" : {
-          "start" : 1596730986047,
-          "stop" : 1596730997251,
-          "duration" : 11204
+          "start" : 1598032773840,
+          "stop" : 1598032782953,
+          "duration" : 9113
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "07f81be3b1f35f195dc7f2a4d62c4e9d"
+      "uid" : "ac689507677b6cc6544df29146df041a"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

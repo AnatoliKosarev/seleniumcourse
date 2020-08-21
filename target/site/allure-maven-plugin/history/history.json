@@ -1,59 +1,78 @@
 {
-  "d354cc4cfe9a47297c082033841c8125" : {
+  "f018b1c3311cc9b2e919911e16592b01" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "407c28aa88616b8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1598032777147,
+        "stop" : 1598032781100,
+        "duration" : 3953
+      }
+    } ]
+  },
+  "4b222363f5a89bb37c512ca10318fdec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d6ae9029d9e95ec8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1598032758043,
+        "stop" : 1598032773694,
+        "duration" : 15651
+      }
+    } ]
+  },
+  "1d4885a82aae527cf1723769a79ace0f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b4544f64e1cd5f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1598032758043,
+        "stop" : 1598032777143,
+        "duration" : 19100
+      }
+    } ]
+  },
+  "71d0b2e487e2e5e7d5ce6aa983848d65" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c3dccf4da94afb2",
-      "status" : "broken",
-      "statusDetails" : "element click intercepted: Element <button type=\"submit\" data-qa-node=\"submit\" class=\"sc-bwzfXH ezBCKw\">...</button> is not clickable at point (960, 806). Other element would receive the click: <div class=\"sc-esjQYD gXfEby\">...</div>\n  (Session info: chrome=84.0.4147.105)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'KOSARAU', ip: '169.254.129.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\kosarau\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 54a4a42b78ae0a3f16c3d43167f69318",
+      "uid" : "7942561d89b853a1",
+      "status" : "failed",
+      "statusDetails" : "Element not found {By.xpath: //div[contains(text(), 'One-time password has been forwarded to your phone')]}\r\nExpected: visible\r\nScreenshot: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.png\r\nPage source: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.html\r\nTimeout: 4 s.\r\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(), 'One-time password has been forwarded to your phone')]\"}",
       "time" : {
-        "start" : 1596730986047,
-        "stop" : 1596730997251,
-        "duration" : 11204
-      }
-    } ]
-  },
-  "2617b32673ebf4748b3f798203f042f7" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "eb76957dc908112",
-      "status" : "passed",
-      "time" : {
-        "start" : 1596730986047,
-        "stop" : 1596730992743,
-        "duration" : 6696
-      }
-    } ]
-  },
-  "2f2562ad7fc944312bd786d03ad6ea2d" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9130b997194ee6e9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1596730994022,
-        "stop" : 1596730996842,
-        "duration" : 2820
+        "start" : 1598032773840,
+        "stop" : 1598032782953,
+        "duration" : 9113
       }
     } ]
   }

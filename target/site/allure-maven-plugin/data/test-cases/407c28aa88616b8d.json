@@ -1,0 +1,66 @@
+{
+  "uid" : "407c28aa88616b8d",
+  "name" : "Public session, non-client check fro redirect to authorisation page after selecting credit card from wallet",
+  "fullName" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest.checkRedirectToAuthPage",
+  "historyId" : "f018b1c3311cc9b2e919911e16592b01",
+  "time" : {
+    "start" : 1598032777147,
+    "stop" : 1598032781100,
+    "duration" : 3953
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Tests to check mobile phone account replenishment functionality"
+  }, {
+    "name" : "story",
+    "value" : "Positive test scenario"
+  }, {
+    "name" : "host",
+    "value" : "kosarau"
+  }, {
+    "name" : "thread",
+    "value" : "13768@kosarau.ForkJoinPool-1-worker-1(13)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkRedirectToAuthPage"
+  }, {
+    "name" : "suite",
+    "value" : "tests.telecommunications.positive.MobileReplenishmentPositiveTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "check-list",
+    "url" : "https://docs.google.com/spreadsheets/d/1Pva7hvXgpTNAWbeqj4J-dOSf24dVdgVMR0oX3k2cvV0/edit?usp=sharing",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "407c28aa88616b8d.json",
+  "parameterValues" : [ ]
+}

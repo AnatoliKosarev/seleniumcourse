@@ -1,0 +1,66 @@
+{
+  "uid" : "d6ae9029d9e95ec8",
+  "name" : "Public session, non-client, reviewing the contract",
+  "fullName" : "tests.loans.positive.CarLoansPositiveTest.selectAgreementsTabInPublicSession",
+  "historyId" : "4b222363f5a89bb37c512ca10318fdec",
+  "time" : {
+    "start" : 1598032758043,
+    "stop" : 1598032773694,
+    "duration" : 15651
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Tests to check Car Loan functionality"
+  }, {
+    "name" : "story",
+    "value" : "Positive test scenario"
+  }, {
+    "name" : "host",
+    "value" : "kosarau"
+  }, {
+    "name" : "thread",
+    "value" : "13768@kosarau.ForkJoinPool-1-worker-0(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "selectAgreementsTabInPublicSession"
+  }, {
+    "name" : "suite",
+    "value" : "tests.loans.positive.CarLoansPositiveTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "check-list",
+    "url" : "https://docs.google.com/spreadsheets/d/1Pva7hvXgpTNAWbeqj4J-dOSf24dVdgVMR0oX3k2cvV0/edit?usp=sharing",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d6ae9029d9e95ec8.json",
+  "parameterValues" : [ ]
+}

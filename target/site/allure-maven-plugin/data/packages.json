@@ -6,26 +6,26 @@
     "children" : [ {
       "name" : "telecommunications.positive.MobileReplenishmentPositiveTest",
       "children" : [ {
-        "name" : "minAmountReplenishmentCheck",
-        "uid" : "c3dccf4da94afb2",
+        "name" : "checkMinAmountReplenishment",
+        "uid" : "8b4544f64e1cd5f7",
         "parentUid" : "1d96076147d2ada223276ba43bc9a122",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1596730986047,
-          "stop" : 1596730997251,
-          "duration" : 11204
+          "start" : 1598032758043,
+          "stop" : 1598032777143,
+          "duration" : 19100
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "selectWalletInPublicSession",
-        "uid" : "9130b997194ee6e9",
+        "name" : "checkRedirectToAuthPage",
+        "uid" : "407c28aa88616b8d",
         "parentUid" : "1d96076147d2ada223276ba43bc9a122",
         "status" : "passed",
         "time" : {
-          "start" : 1596730994022,
-          "stop" : 1596730996842,
-          "duration" : 2820
+          "start" : 1598032777147,
+          "stop" : 1598032781100,
+          "duration" : 3953
         },
         "flaky" : false,
         "parameters" : [ ]
@@ -34,14 +34,26 @@
     }, {
       "name" : "loans.positive.CarLoansPositiveTest",
       "children" : [ {
-        "name" : "selectAgreementTabInPublicSession",
-        "uid" : "eb76957dc908112",
+        "name" : "selectAgreementsTabInPublicSession",
+        "uid" : "d6ae9029d9e95ec8",
         "parentUid" : "e6de6f55e7a191e801ed140634e7e0e8",
         "status" : "passed",
         "time" : {
-          "start" : 1596730986047,
-          "stop" : 1596730992743,
-          "duration" : 6696
+          "start" : 1598032758043,
+          "stop" : 1598032773694,
+          "duration" : 15651
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "applyForUsedCarLoanPublicSession",
+        "uid" : "7942561d89b853a1",
+        "parentUid" : "e6de6f55e7a191e801ed140634e7e0e8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1598032773840,
+          "stop" : 1598032782953,
+          "duration" : 9113
         },
         "flaky" : false,
         "parameters" : [ ]

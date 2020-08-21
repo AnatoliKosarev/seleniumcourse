@@ -1,15 +1,5 @@
 package tests.base;
 
-import common.CommonActions;
-import common.Config;
-import common.Listener;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.TestInstance;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.base.BasePage;
@@ -22,15 +12,11 @@ import java.util.Objects;
 
 import static common.Config.CLEAR_REPORTS_AND_SCREENSHOTS;
 
-@ExtendWith(Listener.class)
-@Execution(ExecutionMode.CONCURRENT)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class BaseTest {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Listener.class);
-    protected WebDriver driver = CommonActions.createDriver();
-    protected BasePage basePage = new BasePage(driver);
-    protected CarLoansPage carLoans = new CarLoansPage(driver);
-    protected MobileReplenishmentPage mobileReplenishmentPage = new MobileReplenishmentPage(driver);
+    private static final Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
+    protected BasePage basePage = new BasePage();
+    protected CarLoansPage carLoans = new CarLoansPage();
+    protected MobileReplenishmentPage mobileReplenishmentPage = new MobileReplenishmentPage();
 
     static {
         LOGGER.info("START TIME: " + LocalTime.now());
@@ -47,18 +33,6 @@ public class BaseTest {
             for (File screenshot : Objects.requireNonNull(screenshotDir.listFiles())) {
                 screenshot.delete();
             }
-        }
-    }
-
-    @AfterEach
-    void clearCookiesAndLocalStorage() {
-        ();
-    }
-
-    @AfterAll
-    void closeBrowser() {
-        if (!Config.KEEP_BROWSER_OPEN) {
-            driver.quit();
         }
     }
 }

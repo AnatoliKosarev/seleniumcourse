@@ -1,4 +1,26 @@
 {
-  "total" : 3,
-  "items" : [ ]
+  "total" : 2,
+  "items" : [ {
+    "uid" : "8a69eddea1d17c186a385bb832ec5612",
+    "name" : "Tests to check Car Loan functionality",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "9405dcbde5fabeba49622259c8e3adb7",
+    "name" : "Tests to check mobile phone account replenishment functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }

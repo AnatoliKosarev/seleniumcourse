@@ -1,4 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: tests.loans.positive.CarLoansPositiveTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.434 s - in tests.loans.positive.CarLoansPositiveTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.161 s <<< FAILURE! - in tests.loans.positive.CarLoansPositiveTest
+applyForUsedCarLoanPublicSession  Time elapsed: 5.824 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //div[contains(text(), 'One-time password has been forwarded to your phone')]}
+Expected: visible
+Screenshot: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.png
+Page source: file:/C:/Users/kosarau/Documents/selenidecourse/build/reports/tests/1598032781937.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'One-time password has been forwarded to your phone')]"}
+	at tests.loans.positive.CarLoansPositiveTest.applyForUsedCarLoanPublicSession(CarLoansPositiveTest.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'One-time password has been forwarded to your phone')]"}
+  (Session info: chrome=84.0.4147.135)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KOSARAU', ip: '169.254.31.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\kosarau\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1c273ca13e9c09e233f2b02bb84f3c3e
+*** Element info: {Using=xpath, value=//div[contains(text(), 'One-time password has been forwarded to your phone')]}
+	at tests.loans.positive.CarLoansPositiveTest.applyForUsedCarLoanPublicSession(CarLoansPositiveTest.java:38)
+

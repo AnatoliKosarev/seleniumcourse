@@ -1,10 +1,13 @@
 package pages.loans;
 
 import com.codeborne.selenide.SelenideElement;
+import constants.Constant;
 import pages.base.BasePage;
 
+import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
+import static constants.Constant.TimeVariables.*;
 
 public class CarLoansPage extends BasePage {
 
@@ -16,8 +19,8 @@ public class CarLoansPage extends BasePage {
     private final SelenideElement phoneNumberInputFieldLocator = $x("//input[@data-qa-node='phone-number']");
     private final SelenideElement submitApplicationButtonLocator = $x("//button[@type='button' and contains(text(), 'Submit an application')]");
     private final SelenideElement selectedUsedCarSwitcherLocator = $x("//div[@data-qa-node='type' and contains(text(), 'With mileage')]");
-    private final SelenideElement loginFormWidgetLocator = $x("//iframe[@src='https://login-widget.privat24.ua/']");
-    private final SelenideElement ukrainePhoneCodeButtonLocator = $x("//button[@data-qa-value='Ukraine']");
+    private final SelenideElement russianPhoneCodeButtonLocator = $x("//button[@data-qa-value='Russia']");
+    private final SelenideElement passwordConfirmationWidgetLocator = $x("//div[contains(text(), 'One-time password has been forwarded to your phone')]");
 
     /**
      * Select "Agreements" tab
@@ -90,8 +93,8 @@ public class CarLoansPage extends BasePage {
      * Select Ukraine country code from country code list
      * @return CarLoansPage object
      */
-    public CarLoansPage selectUkraineCountryCodeFromList() {
-        ukrainePhoneCodeButtonLocator.shouldBe(visible).click();
+    public CarLoansPage selectRussianCountryCodeFromList() {
+        russianPhoneCodeButtonLocator.shouldBe(visible).click();
         return this;
     }
 
@@ -100,16 +103,16 @@ public class CarLoansPage extends BasePage {
      * @return CarLoansPage object
      */
     public CarLoansPage submitCarLoanApplication() {
-        submitApplicationButtonLocator.shouldBe(visible).click();
+        submitApplicationButtonLocator.shouldBe(enabled).click();
         return this;
     }
 
     /**
-     * Check that login form is displayed
+     * Check that password confirmation form is displayed
      * @return CarLoansPage object
      */
-    public CarLoansPage checkLoginFormIsDisplayed() {
-        loginFormWidgetLocator.shouldBe(visible);
+    public CarLoansPage checkPassConfirmFormDisplayed() {
+        passwordConfirmationWidgetLocator.shouldBe(visible);
         return this;
     }
 }
