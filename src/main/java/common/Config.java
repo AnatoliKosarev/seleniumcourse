@@ -1,16 +1,15 @@
 package common;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 
 public class Config {
 
     /**
-     * Specify test browser and platform
-     * CHROME_WINDOWS
-     * MOZILLA_WINDOWS
+     * Specify test browser
+     * CHROME
+     * FIREFOX
      */
-    public static final String BROWSER_AND_PLATFORM = "CHROME_WINDOWS";
+    public static final String BROWSER = "CHROME";
 
     /**
      * Clean browser cookies after each iteration when = "true"
@@ -30,6 +29,7 @@ public class Config {
     static {
         Configuration.holdBrowserOpen = KEEP_BROWSER_OPEN;
         Configuration.reportsFolder = "build/reports/tests";
+        Configuration.browser = BROWSER;
     }
 }
 
